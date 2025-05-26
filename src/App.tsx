@@ -44,7 +44,7 @@ function App() {
           {/* Container dos Cards com gap responsivo (gap-6 em mobile, gap-8 em desktop) */}
           <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8 w-full">
             <Card
-              icon="&lt;/&gt;"
+              icon="&lt;/&gt;"  
               title="Desenvolvimento"
               description="Soluções personalizadas para seu negócio."
               color="bg-white"
