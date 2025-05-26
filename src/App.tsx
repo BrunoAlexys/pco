@@ -4,6 +4,12 @@ import Header from "./components/header"
 import Team from "./components/membros/membro";
 import Tecnologias from "./components/tecnologia/tecnologias";
 import { IconData } from "./data/iconData";
+import Olho from './assets/olho.png';
+import Foguete from './assets/foguete.png';
+import Coracao from './assets/heart.png';
+import Nuvem from './assets/cloud.png';
+import Shield from './assets/shield.png';
+import Code from './assets/code.png';
 
 function App() {
 
@@ -19,17 +25,17 @@ function App() {
           <h1 className="text-2xl font-bold">Sobre Nós</h1>
         </div>
         <Card
-          icon="🚀"
+          icon={Foguete}
           title="Missão"
           description="Trasformar ideias em soluções inovadoras, garantindo excelência em um ambiente dinâmico e divertido."
         />
         <Card
-          icon="👁️"
+          icon={Olho}
           title="Visão"
           description="Ser referência em inovação, entregando qualidade com um toque de criatividade e leveza."
         />
         <Card
-          icon="❤️"
+          icon={Coracao}
           title="Valores"
           description="Inovação, qualidade e um ambiente leve, onde criatividade e diversão impulsionam grandes resultados."
         />
@@ -44,20 +50,20 @@ function App() {
           {/* Container dos Cards com gap responsivo (gap-6 em mobile, gap-8 em desktop) */}
           <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8 w-full">
             <Card
-              icon="&lt;/&gt;"  
+              icon={Code}
               title="Desenvolvimento"
               description="Soluções personalizadas para seu negócio."
               color="bg-white"
               colorIcon="text-yellow-400"
             />
             <Card
-              icon="☁️"
+              icon={Nuvem}
               title="Cloud Computing"
               description="Infraestrutura escalável e segura."
               color="bg-white"
             />
             <Card
-              icon="🛡️"
+              icon={Shield}
               title="Segurança"
               description="Proteção completa para seus dados."
               color="bg-white"
