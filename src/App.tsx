@@ -11,6 +11,7 @@ import Nuvem from './assets/cloud.png';
 import Shield from './assets/shield.png';
 import Code from './assets/code.png';
 import Products from "./components/Product/product";
+import Rodape from "./components/footer/footer";
 
 function App() {
 
@@ -84,6 +85,9 @@ function App() {
 
       <div className="w-full">
         <Team />
+      </div>
+      <div className="w-full h-40">
+        <Rodape />
       </div>
     </div>
   );
