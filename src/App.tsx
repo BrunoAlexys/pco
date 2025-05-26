@@ -1,6 +1,7 @@
 import Banner from "./components/banner"
 import Card from "./components/card"
 import Header from "./components/header"
+import Team from "./components/membros/membro";
 import Tecnologias from "./components/tecnologia/tecnologias";
 import { IconData } from "./data/iconData";
 
@@ -76,6 +77,10 @@ function App() {
           </div>
         </div>
         <Tecnologias iconData={IconData} />
+      </div>
+
+      <div className="w-full">
+        <Team />
       </div>
     </div>
   );
