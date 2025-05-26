@@ -1,8 +1,11 @@
 import Banner from "./components/banner"
 import Card from "./components/card"
 import Header from "./components/header"
+import Tecnologias from "./components/tecnologia/tecnologias";
+import { IconData } from "./data/iconData";
 
 function App() {
+
   return (
     <div className="flex flex-col items-center">
       <Header />
@@ -31,9 +34,9 @@ function App() {
         />
       </div>
 
-      <div className="bg-[#0d1e26] w-full mt-10 py-10"> 
+      <div className="bg-[#0d1e26] w-full mt-10 py-10">
         <div className="flex flex-col items-center justify-center lg:mx-20 mx-8">
-          <div className="border-b-2 border-yellow-400 pb-2 mb-10 text-center"> 
+          <div className="border-b-2 border-yellow-400 pb-2 mb-10 text-center">
             <h1 className="text-2xl font-bold text-white">Nossos Serviços</h1>
           </div>
 
@@ -60,6 +63,19 @@ function App() {
             />
           </div>
         </div>
+      </div>
+
+      <div>
+
+      </div>
+
+      <div className="w-full h-[300px]">
+        <div className="text-center mt-10">
+          <div className="inline-block border-b-2 border-yellow-400 pb-2 mb-4">
+            <h1 className="text-2xl font-bold">Tecnologias</h1>
+          </div>
+        </div>
+        <Tecnologias iconData={IconData} />
       </div>
     </div>
   );
