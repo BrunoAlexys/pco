@@ -45,15 +45,15 @@ const Team = () => {
     ];
 
     return (
-        <section id="equipe" className="py-10 px-5 text-center bg-white">
+        <section id="equipe" className="py-10 px-5 text-center bg-[#ccc]">
             <div className="mb-10 relative">
-                <h1 className="text-2xl text-gray-800 mb-2 font-bold">Nossa Equipe</h1>
+                <h1 className="text-2xl lg:text-3xl text-gray-800 mb-2 font-bold">Nossa Equipe</h1>
                 <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
             </div>
 
             <div className="w-full max-w-full px-0 relative">
                 <Swiper
-                    spaceBetween={30}
+                    spaceBetween={20}
                     slidesPerView={1}
                     autoplay={{
                         delay: 3000,

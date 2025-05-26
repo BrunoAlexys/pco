@@ -12,7 +12,13 @@ interface TecnologiaProps {
 function Tecnologias({ iconData }: TecnologiaProps) {
 
     return (
-        <div className='w-full h-full p-4'>
+        <div className='w-full h-full p-4 bg-[#f7f5f0] '>
+            <div className="text-center mt-4">
+                    <h1 className="text-2xl lg:text-3xl font-bold pb-2">Tecnologias</h1>
+                    <div className="w-20 h-1 bg-yellow-400 mx-auto mb-12"></div>
+            </div>
+            
+            <div>
             <Swiper
                 autoplay={{
                     delay: 2500,
@@ -28,10 +34,10 @@ function Tecnologias({ iconData }: TecnologiaProps) {
                     },
                     1024: {
                         slidesPerView: 3,
-                        spaceBetween: 30,
+                        spaceBetween: 30, 
                     },
                 }}
-            >
+                >
                 {iconData.map((item) => (
                     <SwiperSlide key={item.id}>
                         <div className='w-full h-full flex flex-col items-center justify-center gap-4 p-4'>
@@ -40,10 +46,12 @@ function Tecnologias({ iconData }: TecnologiaProps) {
                                 alt={item.alt}
                                 className='w-20 h-20 object-contain'
                             />
+                            <h2 className='text-2xl font-bold text-[#0d1e26]'>{item.alt}</h2>
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
+            </div>
         </div>
     );
 }

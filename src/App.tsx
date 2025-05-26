@@ -10,20 +10,21 @@ import Coracao from './assets/heart.png';
 import Nuvem from './assets/cloud.png';
 import Shield from './assets/shield.png';
 import Code from './assets/code.png';
+import Products from "./components/Product/product";
 
 function App() {
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
       <Header />
       <Banner />
-      <div className="border-b-2 border-yellow-400 pb-2 mb-4 hidden lg:block w-36 mt-10">
-        <h1 className="text-2xl font-bold">Sobre Nós</h1>
-      </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center mt-10 lg:mx-20 mx-8 gap-6">
-        <div className="border-b-2 border-yellow-400 pb-2 mb-4 lg:hidden">
-          <h1 className="text-2xl font-bold">Sobre Nós</h1>
+      
+      <div className="pb-2 mb-4 mt-10">
+          <h1 className="text-2xl font-bold pb-2 md:text-3xl">Sobre Nós</h1>
+          <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
         </div>
+
+      <div className="flex flex-col lg:flex-row items-center justify-center mt-10 lg:mx-20 mx-8 gap-6">
         <Card
           icon={Foguete}
           title="Missão"
@@ -43,8 +44,9 @@ function App() {
 
       <div className="bg-[#0d1e26] w-full mt-10 py-10">
         <div className="flex flex-col items-center justify-center lg:mx-20 mx-8">
-          <div className="border-b-2 border-yellow-400 pb-2 mb-10 text-center">
-            <h1 className="text-2xl font-bold text-white">Nossos Serviços</h1>
+          <div className="pb-2 mb-10 text-center">
+            <h1 className="text-2xl font-bold text-white pb-2">Nossos Serviços</h1>
+            <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
           </div>
 
           {/* Container dos Cards com gap responsivo (gap-6 em mobile, gap-8 em desktop) */}
@@ -73,15 +75,10 @@ function App() {
       </div>
 
       <div>
-
+        <Products />
       </div>
 
-      <div className="w-full h-[300px]">
-        <div className="text-center mt-10">
-          <div className="inline-block border-b-2 border-yellow-400 pb-2 mb-4">
-            <h1 className="text-2xl font-bold">Tecnologias</h1>
-          </div>
-        </div>
+      <div className="w-full h-[340px]">
         <Tecnologias iconData={IconData} />
       </div>
 
