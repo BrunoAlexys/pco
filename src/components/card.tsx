@@ -7,7 +7,7 @@ interface CardProps {
 
 function Card({ icon, title, description, color }: CardProps) {
     return (
-        <div className={`${color ? color : 'bg-[#f7f5f0]'} md:max-w-[600px] flex flex-col items-center justify-center p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-b-3 hover:border-yellow-400`}>
+        <div className={`${color ? color : 'bg-[#f7f5f0]'} md:max-w-[600px] lg:max-h-[320px] flex flex-col items-center justify-center p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-b-3 hover:border-yellow-400`}>
             <div className="flex items-center p-4 rounded-full text-[40px] bg-[#0d1e26]">
                 {icon}
             </div>
