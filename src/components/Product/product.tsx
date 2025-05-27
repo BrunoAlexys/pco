@@ -18,9 +18,10 @@ function Products() {
                             <h1 className='text-2xl md:text-3xl lg:text-3xl text-[#0d1e26] font-bold'>Meu Tempo</h1>
                             <div className="w-12.5 md:w-15.5 lg:w-15.5 h-1 bg-yellow-400"></div>
                         </div>
-                        <p
-                            className='text-gray-800 text-lg mb-4'
-                        > Nosso aplicativo de gestão de tempo foi criado para ajudar você a planejar suas tarefas com eficiência e alcançar seus objetivos. Com uma interface intuitiva e moderna, ele permite:</p>
+                        <p className='text-gray-800 text-lg mb-4'>
+                            Nosso aplicativo de gestão de tempo está em fase de desenvolvimento e foi idealizado para ajudar você a planejar suas tarefas com eficiência e alcançar seus objetivos. Com uma interface intuitiva e moderna, ele permitirá:
+                        </p>
+
                         <ul className='list-disc marker:text-yellow-400 pl-5 text-start text-gray-800'>
                             <li>Criar e organizar tarefas diárias</li>
                             <li>Acompanhar seu progresso com relatórios detalhados</li>
