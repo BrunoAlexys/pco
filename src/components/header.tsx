@@ -20,13 +20,14 @@ function Header() {
                 {/* Menu centralizado apenas no desktop */}
                 <div className="hidden lg:flex flex-1 justify-center">
                     <nav className="flex items-center gap-8 text-lg font-medium">
-                        <a href="#sobre">Sobre</a>
-                        <a href="#servicos">Serviços</a>
-                        <a href="#produtos">Produtos</a>
-                        <a href="#tecnologia">Tecnologia</a>
-                        <a href="#equipe">Equipe</a>
+                        <a href="#sobre" className="relative after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-yellow-400 after:transition-all hover:after:w-full">Sobre</a>
+                        <a href="#servicos" className="relative after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-yellow-400 after:transition-all hover:after:w-full">Serviços</a>
+                        <a href="#produtos" className="relative after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-yellow-400 after:transition-all hover:after:w-full">Produtos</a>
+                        <a href="#tecnologia" className="relative after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-yellow-400 after:transition-all hover:after:w-full">Tecnologia</a>
+                        <a href="#equipe" className="relative after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-yellow-400 after:transition-all hover:after:w-full">Equipe</a>
                     </nav>
                 </div>
+
 
                 {/* Botão "Entre em Contato" apenas no desktop */}
                 <div className="hidden lg:block">
