@@ -16,7 +16,7 @@ function Rodape() {
                 <h4 className="text-white font-sans text-[12px] md:text-lg">PCO.2025. All rights reserved.</h4>
                 <div className="flex items-center gap-2 sm:mr-6 md:mr-8">
                     <div className="w-8 md:w-14 xl:w-12 h-8 md:h-14 xl:h-12 border-2 ml-6 border-white rounded-full flex items-center justify-center">
-                        <a href="#">
+                        <a href="https://www.instagram.com/powe.rcodeorganization/" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src={Instagram} 
                                 alt="Instagram" 
@@ -27,7 +27,7 @@ function Rodape() {
                         </a>
                     </div>
                     <div className="w-8 md:w-14 xl:w-12 h-8 md:h-14 xl:h-12 border-2 border-white rounded-full flex items-center justify-center">
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/power-code-organization-pco-445662368/" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src={Linkedin} 
                                 alt="LinkedIn" 
@@ -38,7 +38,7 @@ function Rodape() {
                         </a>
                     </div>
                     <div className="w-8 md:w-14 xl:w-12 h-8 md:h-14 xl:h-12 border-2 border-white rounded-full flex items-center justify-center">
-                        <a href="#">
+                        <a href="https://github.com/PowerCodeOrganization" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src={Github} 
                                 alt="GitHub" 

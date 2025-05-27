@@ -13,25 +13,23 @@ function Header() {
 
     return (
         <>
-            {/* Header fixo */}
             <header className="w-full h-20 fixed top-0 left-0 bg-white shadow-md flex items-center justify-between px-4 z-50">
+                {/* Logo */}
                 <img src={Logo} alt="Logo" className="w-16 h-16" />
 
-                {/* Ícone de menu para mobile/tablet */}
-                <button
-                    onClick={toggleMenu}
-                    className="text-3xl text-gray-800 z-50 lg:hidden"
-                >
-                    {menuOpen ? <FaTimes /> : <FaBars />}
-                </button>
+                {/* Menu centralizado apenas no desktop */}
+                <div className="hidden lg:flex flex-1 justify-center">
+                    <nav className="flex items-center gap-8 text-lg font-medium">
+                        <a href="#sobre">Sobre</a>
+                        <a href="#servicos">Serviços</a>
+                        <a href="#produtos">Produtos</a>
+                        <a href="#tecnologia">Tecnologia</a>
+                        <a href="#equipe">Equipe</a>
+                    </nav>
+                </div>
 
-                {/* Menu desktop (a partir de lg) */}
-                <nav className="hidden lg:flex items-center gap-8 text-lg font-medium">
-                    <a href="#sobre">Sobre</a>
-                    <a href="#servicos">Serviços</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#tecnologia">Tecnologia</a>
-                    <a href="#equipe">Equipe</a>
+                {/* Botão "Entre em Contato" apenas no desktop */}
+                <div className="hidden lg:block">
                     <a
                         href={whatsappLink}
                         target="_blank"
@@ -40,10 +38,18 @@ function Header() {
                     >
                         Entre em Contato
                     </a>
-                </nav>
+                </div>
+
+                {/* Ícone de menu apenas para mobile */}
+                <button
+                    onClick={toggleMenu}
+                    className="text-3xl text-gray-800 z-50 lg:hidden"
+                >
+                    {menuOpen ? <FaTimes /> : <FaBars />}
+                </button>
             </header>
 
-            {/* Menu mobile/tablet deslizando de cima */}
+            {/* Menu mobile deslizando de cima */}
             <div
                 className={`fixed top-0 left-0 w-full h-full bg-white z-40 transition-transform duration-300 ease-in-out lg:hidden ${menuOpen ? 'translate-y-0' : '-translate-y-full'
                     }`}
