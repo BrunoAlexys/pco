@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination'; // Importação explícita
-import 'swiper/css/navigation'; // Importação explícita
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import type { IconData } from '../../data/iconData';
 
