@@ -12,11 +12,12 @@ function Banner() {
                 <p className='text-2xl md:text-4xl lg:text-5xl font-bold text-white pb-0.5 sm:pb-1 md:pb-1 lg:pb-2 xl:pb-3'>
                     Inovação e <span className='text-yellow-400'>Tecnologia</span> para seu negócio
                 </p>
-                <button
-                    className='bg-[#08151b] hover:bg-yellow-400 transition w-32 md:w-52 py-2 md:py-4 rounded-full text-white hover:text-[#08151b] md:text-xl font-bold lg:text-xl xl:text-2xl'
+                <a 
+                    href='#produtos'
+                    className='text-center bg-[#08151b] hover:bg-yellow-400 transition w-32 md:w-52 py-2 md:py-4 rounded-full text-white hover:text-[#08151b] md:text-xl font-bold lg:text-xl xl:text-2xl'
                 >
                     Saiba Mais
-                </button>
+                </a>
             </div>
         </div>
     );
