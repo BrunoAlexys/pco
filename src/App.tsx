@@ -19,11 +19,11 @@ function App() {
     <div className="flex flex-col items-center ">
       <Header />
       <Banner />
-      
-      <div className="pb-2 mb-4 mt-10">
-          <h1 className="text-2xl font-bold pb-2 md:text-3xl">Sobre Nós</h1>
-          <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
-        </div>
+
+      <div className="pb-2 mb-4 mt-10" id="sobre">
+        <h1 className="text-2xl font-bold pb-2 md:text-3xl">Sobre Nós</h1>
+        <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
+      </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center mt-10 lg:mx-20 mx-8 gap-6">
         <Card
@@ -43,14 +43,13 @@ function App() {
         />
       </div>
 
-      <div className="bg-[#0d1e26] w-full mt-10 py-10">
+      <div className="bg-[#0d1e26] w-full mt-10 py-10" id="servicos">
         <div className="flex flex-col items-center justify-center lg:mx-20 mx-8">
           <div className="pb-2 mb-10 text-center">
             <h1 className="text-2xl font-bold text-white pb-2">Nossos Serviços</h1>
             <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
           </div>
 
-          {/* Container dos Cards com gap responsivo (gap-6 em mobile, gap-8 em desktop) */}
           <div className="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-8 w-full">
             <Card
               icon={Code}
@@ -75,18 +74,18 @@ function App() {
         </div>
       </div>
 
-      <div>
+      <div id="produtos">
         <Products />
       </div>
 
-      <div className="w-full h-[340px]">
+      <div className="w-full h-[340px]" id="tecnologia">
         <Tecnologias iconData={IconData} />
       </div>
 
-      <div className="w-full">
+      <div className="w-full" id="equipe">
         <Team />
       </div>
-      <div className="w-full h-40">
+      <div className="w-full">
         <Rodape />
       </div>
     </div>
