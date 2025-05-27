@@ -1,4 +1,3 @@
-import ImageBanner from '../assets/banner.png';
 import PlanoDeFundo from '../assets/PlanoFundo.png';
 
 function Banner() {
