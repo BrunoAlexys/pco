@@ -13,7 +13,7 @@ function Banner() {
                     Inovação e <span className='text-yellow-400'>Tecnologia</span> para seu negócio
                 </p>
                 <a 
-                    href='#produtos'
+                    href='#sobre'
                     className='text-center bg-[#08151b] hover:bg-yellow-400 transition w-32 md:w-52 py-2 md:py-4 rounded-full text-white hover:text-[#08151b] md:text-xl font-bold lg:text-xl xl:text-2xl'
                 >
                     Saiba Mais
